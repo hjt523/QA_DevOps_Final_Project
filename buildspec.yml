@@ -16,6 +16,6 @@ phases:
     
       - terraform --version
       - terraform init -input=false
-      - terraform plan -var-file="secret.tfvars"
-      - terraform apply -var-file="secret.tfvars" -auto-approve
+      - terraform plan -var-file="secret.tfvars" -auto-approve
+      - terraform apply -var-file="secret.tfvars" 
 
