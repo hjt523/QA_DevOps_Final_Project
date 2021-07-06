@@ -17,7 +17,7 @@ services:
   backend:
     container_name: Backend
     build: ./spring-petclinic-rest
-    image: fackend
+    image: backend
     ports:
       - target: 9966
         published: 9966
