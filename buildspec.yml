@@ -18,7 +18,5 @@ phases:
       - terraform init -input=false
       - terraform validate
       - terraform plan -lock=false -input=false
-      - terraform apply
-      
-      - echo "yes"
+      - yes | terraform apply 
 
