@@ -16,7 +16,7 @@ phases:
     
       - terraform --version
       - terraform init -input=false
-      - terraform plan -out= tfplan -input=false -var-file="secret.tfvars"
+      - terraform plan 
       - terraform apply -input=false tfplan -var-file="secret.tfvars"
       
 
