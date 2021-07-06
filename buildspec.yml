@@ -15,7 +15,7 @@ phases:
     commands:
     
       - terraform --version
-      - terraform init -input=false
+      - terraform init 
       - terraform validate
       - terraform apply
 
