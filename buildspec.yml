@@ -20,6 +20,7 @@ phases:
 #       - terraform apply -var-file="secret.tfvars" -auto-approve
       
     debug:
-      aws --version
-      terraform --version
+      commands:
+        - aws --version
+        - terraform --version
 
