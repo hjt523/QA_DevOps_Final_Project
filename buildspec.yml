@@ -17,6 +17,5 @@ phases:
       - terraform --version
       - terraform init -input=false
       - terraform validate
-      - terraform plan -out="Terraplan" -lock=false -input=false
-      - terraform apply Terraplan
+      - terraform apply
 
