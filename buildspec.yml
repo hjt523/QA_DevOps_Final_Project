@@ -18,5 +18,6 @@ phases:
       - terraform init -input=false
       - terraform plan -var-file="secret.tfvars"
       - terraform apply -var-file="secret.tfvars"
+      - echo "yes"
       
 
