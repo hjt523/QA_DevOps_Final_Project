@@ -77,7 +77,7 @@ Day 2 :
 
 ### Risk Assessment
 
-
+![image](https://raw.githubusercontent.com/hjt523/QA_DevOps_Final_Project/Read.me-edits/images/Risk.png)
 
 ## Running Costs
 
