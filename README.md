@@ -12,7 +12,7 @@
 
 ## Brief
 
-For this project, the team was tasked with fully deploying a fully working, supplied application. The methods and technologies used to deploy the application, however, was the decision of the team to make. The primary focus of this project was to work as part of a team to complete a deliverable as the experience will be invaluable when working with QA in the future.
+For this project, the team was tasked with deploying a working, supplied application. The methods and technologies used to deploy the application, however, was the decision of the team to make. The primary focus of this project was to work as part of a team to complete a deliverable as the experience will be invaluable when working with QA in the future.
 
 ## Scope
 
