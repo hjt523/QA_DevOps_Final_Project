@@ -20,7 +20,7 @@ phases:
     commands:
     
       - terraform --version
-      - cd ./Terraform
+      - cd ~/Terraform
       - terraform init -input=false
       - terraform plan -var-file="secret.tfvars" 
       - terraform apply -auto-approve -var-file="secret.tfvars" 
