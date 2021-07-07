@@ -1,5 +1,17 @@
 # QA_DevOps_Final_Project
 
+
+
+## Brief
+## Scope
+## The Teams Approach
+## CI/CD Pipeline
+## Risk Assessment
+
+
+
+
+
 The dev branch
 
 
