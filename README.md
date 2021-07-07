@@ -36,9 +36,13 @@ Chief technician - Jack
 * Nginx - To act as a reverse proxy.
 * Kubernetes - To orchestrate and manage our containers and virtual machines.
 
+## CI Pipeline
+
 ![image](https://raw.githubusercontent.com/hjt523/QA_DevOps_Final_Project/Read.me-edits/images/Final_Project_diagram.png)
 
-## Todo Kanban Board Progress:
+## Project Management
+
+### Todo Kanban Board Progress:
 
 Day  1 :
 
