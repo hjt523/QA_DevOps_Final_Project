@@ -19,10 +19,10 @@ https://github.com/spring-petclinic/spring-petclinic-angular
 https://github.com/spring-petclinic/spring-petclinic-rest
 
 Our roles for the project were the following:
-Scrum master - Tom
-Product owner - Amir
-Merge manager - Harry
-Chief technician - Jack
+* Scrum master - Tom
+* Product owner - Amir
+* Merge manager - Harry
+* Debugger - Jack
 
 ### Created With
 
