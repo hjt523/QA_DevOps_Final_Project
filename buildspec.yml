@@ -21,8 +21,9 @@ phases:
     
       - terraform --version
       - cd ./Terraform
-      - terraform init -input=false
-      - terraform plan -var-file="secret.tfvars" 
+      #- terraform init -input=false
+      #- terraform plan -var-file="secret.tfvars" 
+      - terraform destroy -auto-approve -var-file="secret.tfvars" 
       - terraform apply -auto-approve -var-file="secret.tfvars" 
       - aws eks --region eu-west-2 update-kubeconfig --name project_cluster
       - cd ..
