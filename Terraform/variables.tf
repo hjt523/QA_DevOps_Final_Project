@@ -11,7 +11,7 @@ variable "secret_key" {
 }
 
 variable "db_password" {
-    description = "password to access RDS database"
-    type=string
+    # description = "password to access RDS database"
+    # type=string
     sensitive = true
 }
