@@ -3,6 +3,8 @@
 ## Contents
 * [Brief](https://github.com/hjt523/QA_DevOps_Final_Project/tree/Read.me-edits#brief)
    * [Created With](https://github.com/hjt523/QA_DevOps_Final_Project/tree/Read.me-edits#created-with)
+* [Scope](https://github.com/hjt523/QA_DevOps_Final_Project/tree/Read.me-edits#scope)
+* [Project Planning](https://github.com/hjt523/QA_DevOps_Final_Project/tree/Read.me-edits#project-planning)
 * [Project Management](https://github.com/hjt523/QA_DevOps_Final_Project/tree/Read.me-edits#project-management)
    * [Kanban board progress](https://github.com/hjt523/QA_DevOps_Final_Project/tree/Read.me-edits#todo-kanban-board-progress)
 * [CI Pipeline](https://github.com/hjt523/QA_DevOps_Final_Project/tree/Read.me-edits#ci-pipeline)
@@ -24,6 +26,21 @@ Our roles for the project were the following:
 * Product owner - Amir
 * Merge manager - Harry
 * Debugger - Jack
+
+## Scope
+
+The team was required to work with these externally developed applications:
+
+- [Pet Clinic Angular](https://github.com/spring-petclinic/spring-petclinic-angular)
+- [Pet Clinic Rest](https://github.com/spring-petclinic/spring-petclinic-rest)
+
+The angular application consisted of the front end of the application, which the user would directly interact with. The rest application, in contrast, contained the back end functionality.
+
+The team was required to plan, design and implement an automated deployment solution as part of the development workflow and further deployments of the application. There was no restrictions on which technologies can be used to achieve this goal.
+
+## Project Planning
+
+During the week of development, the team was required to run daily scrums, with the Trainer present, to record progress, discuss implementations and ensure the maintainance of a project planning board. The board would be the most useful piece of technology to track progress and view tasks to be completed, as well as open any issues.
 
 ### Created With
 
