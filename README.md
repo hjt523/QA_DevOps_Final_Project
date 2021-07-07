@@ -26,7 +26,17 @@ Chief technician - Jack
 
 ### Created With
 
+* Git - Version control.
+* Github - To manage our repository and to sort our workflow on. Using the Github Projects feature we set up a basic Kanban style board with the intention of automating task creation and review.
+* AWS - Our Cloud Platform of choice was Amazon Web Services as we felt the need to showcase our knowledge with AWS. AWS additionally offers many functionalities that other cloud services do not. 
+  * AWS Codebuild - We decided to use AWS Codebuild rather than Jenkins to automate the building of our project in order to showcase our familiarity with AWS. 
+  * AWS EKS - To start run and scale our Kubernetes functionalities.
+* Terraform - To automate the creation of the instances on AWS and automate the creation of the EKS cluster. 
+* Docker (Compose) - To create our containers that make up the Kubernetes pods.
+* Nginx - To act as a reverse proxy.
+* Kubernetes - To orchestrate and manage our containers and virtual machines.
 
+![image](https://raw.githubusercontent.com/hjt523/QA_DevOps_Final_Project/Read.me-edits/images/Final_Project_diagram.png)
 
 ## Todo Kanban Board Progress:
 
