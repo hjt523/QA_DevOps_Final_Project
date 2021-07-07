@@ -1,11 +1,11 @@
 output "endpoint" {
-    value = aws_eks_cluster.cluster.endpoint
+    value = aws_eks_cluster.project_cluster_1.endpoint
 }
 
 output "kubeconfig-certificate-authority-data" {
-    value = aws_eks_cluster.cluster.certificate_authority.0.data
+    value = aws_eks_cluster.project_cluster_1.certificate_authority.0.data
 }
 
 output "cluster_name" {
-    value = aws_eks_cluster.cluster.name
+    value = aws_eks_cluster.project_cluster_1.name
 }

@@ -2,7 +2,7 @@ provider "aws" {
     access_key = var.access_key
     secret_key = var.secret_key
     region = "eu-west-2"
-    #shared_credentials_file = "~/.aws/credentials"
+    # shared_credentials_file = "~/.aws/credentials"
 }
 
 module "vpc" {
@@ -16,7 +16,10 @@ module "subnet" {
     vpc_cidr_block = module.vpc.vpc_cidr_block
 }
 
-
+module "security_group" {
+    source = "./SG"
+    vpc_id = module.vpc.vpc_id
+}
 
 module "igw" {
     source = "./IGW"
@@ -39,6 +42,9 @@ module "eks" {
 
 module "instances" {
     source = "./EC2"
+    subnet_id = module.subnet.subnet_1
+    vpc_security_group_ids = [module.security_group.sg_id]
+    # ami_id = var.ami_id
 }
 
 module "rds" {
