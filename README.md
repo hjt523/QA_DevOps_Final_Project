@@ -1,19 +1,19 @@
 # QA_DevOps_Final_Project
 
 ## Contents
-* [Brief](https://github.com/hjt523/QA_DevOps_Final_Project/tree/Read.me-edits#brief)
-   * [Created With](https://github.com/hjt523/QA_DevOps_Final_Project/tree/Read.me-edits#created-with)
-* [Scope](https://github.com/hjt523/QA_DevOps_Final_Project/tree/Read.me-edits#scope)
-* [Project Planning](https://github.com/hjt523/QA_DevOps_Final_Project/tree/Read.me-edits#project-planning)
-* [Project Management](https://github.com/hjt523/QA_DevOps_Final_Project/tree/Read.me-edits#project-management)
-   * [Kanban board progress](https://github.com/hjt523/QA_DevOps_Final_Project/tree/Read.me-edits#todo-kanban-board-progress)
-   * [Risk Assessment](https://github.com/hjt523/QA_DevOps_Final_Project/tree/Read.me-edits#risk-assessment)
-* [CI Pipeline](https://github.com/hjt523/QA_DevOps_Final_Project/tree/Read.me-edits#ci-pipeline)
-* [Running Costs](https://github.com/hjt523/QA_DevOps_Final_Project/tree/Read.me-edits#running-costs)
-* [Future Development](https://github.com/hjt523/QA_DevOps_Final_Project/tree/Read.me-edits#future-development)
-* [Contributors](https://github.com/hjt523/QA_DevOps_Final_Project/tree/Read.me-edits#contributors)
-* [Acknowledgments](https://github.com/hjt523/QA_DevOps_Final_Project/tree/Read.me-edits#acknowledgements)
-* [Licensing](https://github.com/hjt523/QA_DevOps_Final_Project/tree/Read.me-edits#licensing)
+
+* [Brief](https://github.com/hjt523/QA_DevOps_Final_Project/tree/DEV#brief)
+   * [Created With](https://github.com/hjt523/QA_DevOps_Final_Project/tree/DEV#created-with)
+* [Scope](https://github.com/hjt523/QA_DevOps_Final_Project/tree/DEV#scope)
+* [Project Planning](https://github.com/hjt523/QA_DevOps_Final_Project/tree/DEV#project-planning)
+* [Project Management](https://github.com/hjt523/QA_DevOps_Final_Project/tree/DEV#project-management)
+   * [Kanban board progress](https://github.com/hjt523/QA_DevOps_Final_Project/tree/DEV#todo-kanban-board-progress)
+* [CI Pipeline](https://github.com/hjt523/QA_DevOps_Final_Project/tree/DEV#ci-pipeline)
+* [Running Costs](https://github.com/hjt523/QA_DevOps_Final_Project/tree/DEV#running-costs)
+* [Future Development](https://github.com/hjt523/QA_DevOps_Final_Project/tree/DEV#future-development)
+* [Contributors](https://github.com/hjt523/QA_DevOps_Final_Project/tree/DEV#contributors)
+* [Acknowledgments](https://github.com/hjt523/QA_DevOps_Final_Project/tree/DEV#acknowledgements)
+* [Licensing](https://github.com/hjt523/QA_DevOps_Final_Project/tree/DEV#licensing)
 
 ## Brief 
 
@@ -59,7 +59,7 @@ During the week of development, the team was required to run daily scrums, with 
 
 Our CI pipeline is displayed below.
 
-![image](https://raw.githubusercontent.com/hjt523/QA_DevOps_Final_Project/Read.me-edits/images/Final_Project_diagram.png)
+![image](https://raw.githubusercontent.com/hjt523/QA_DevOps_Final_Project/DEV/images/Final_Project_diagram.png)
 
 ## Project Management
 
