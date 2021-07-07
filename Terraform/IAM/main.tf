@@ -29,7 +29,7 @@ resource "aws_iam_role_policy_attachment" "node_iam_role-AmazonEC2ContainerRegis
 }
 
 resource "aws_iam_role" "cluster_iam_role" {
-  name = "qa_cluster_iam_role"
+  name = "cluster_iam_role"
 
   assume_role_policy = <<POLICY
 {
