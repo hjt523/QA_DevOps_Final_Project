@@ -2,7 +2,19 @@
 
 The dev branch
 
+## Contents
+* [Brief](https://github.com/hjt523/QA_DevOps_Final_Project#brief)
+   * [Listed Requirements](https://github.com/hjt523/QA_DevOps_Final_Project#listed-project-requirements)
+   * [Created With](https://github.com/hjt523/QA_DevOps_Final_Project#created-with)
+* [CI Pipeline](https://github.com/hjt523/QA_DevOps_Final_Project#ci-pipeline)
+* [Project Management](https://github.com/hjt523/QA_DevOps_Final_Project#project-management)
+  * [Kanban board progress](https://github.com/hjt523/QA_DevOps_Final_Project#todo-kanban-board-progress)
+* [Future Development](https://github.com/hjt523/QA_DevOps_Final_Project#future-development)
+* [Contributors](https://github.com/hjt523/QA_DevOps_Final_Project#contributors)
+* [Acknowledgments](https://github.com/hjt523/QA_DevOps_Final_Project#acknowledgements)
+* [Licensing](https://github.com/hjt523/QA_DevOps_Final_Project#licensing)
 
+## Brief 
 
 ## Todo Kanban Board Progress:
 
