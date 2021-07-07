@@ -4,17 +4,27 @@ The dev branch
 
 ## Contents
 * [Brief](https://github.com/hjt523/QA_DevOps_Final_Project#brief)
-   * [Listed Requirements](https://github.com/hjt523/QA_DevOps_Final_Project#listed-project-requirements)
    * [Created With](https://github.com/hjt523/QA_DevOps_Final_Project#created-with)
-* [CI Pipeline](https://github.com/hjt523/QA_DevOps_Final_Project#ci-pipeline)
 * [Project Management](https://github.com/hjt523/QA_DevOps_Final_Project#project-management)
-  * [Kanban board progress](https://github.com/hjt523/QA_DevOps_Final_Project#todo-kanban-board-progress)
+   * [Kanban board progress](https://github.com/hjt523/QA_DevOps_Final_Project#todo-kanban-board-progress)
+* [CI Pipeline](https://github.com/hjt523/QA_DevOps_Final_Project#ci-pipeline)
 * [Future Development](https://github.com/hjt523/QA_DevOps_Final_Project#future-development)
 * [Contributors](https://github.com/hjt523/QA_DevOps_Final_Project#contributors)
 * [Acknowledgments](https://github.com/hjt523/QA_DevOps_Final_Project#acknowledgements)
 * [Licensing](https://github.com/hjt523/QA_DevOps_Final_Project#licensing)
 
 ## Brief 
+
+We were required to plan, design and implement a solution for automating the development workflows and deployments of the application below. As part of our final deliverable you will need to discuss the project in a presentation and demonstrate these workflows. We were required to choose DevOps technologies that we thought best suited the task at hand and to configure an automated deployment to a cloud service. 
+
+https://github.com/spring-petclinic/spring-petclinic-angular
+https://github.com/spring-petclinic/spring-petclinic-rest
+
+Our roles for the project were the following:
+Scrum master - Tom
+Product owner - Amir
+Merge manager - Harry
+Chief technician - Jack
 
 ## Todo Kanban Board Progress:
 
