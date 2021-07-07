@@ -7,6 +7,7 @@
 * [Project Planning](https://github.com/hjt523/QA_DevOps_Final_Project/tree/Read.me-edits#project-planning)
 * [Project Management](https://github.com/hjt523/QA_DevOps_Final_Project/tree/Read.me-edits#project-management)
    * [Kanban board progress](https://github.com/hjt523/QA_DevOps_Final_Project/tree/Read.me-edits#todo-kanban-board-progress)
+   * [Risk Assessment](https://github.com/hjt523/QA_DevOps_Final_Project/tree/Read.me-edits#risk-assessment)
 * [CI Pipeline](https://github.com/hjt523/QA_DevOps_Final_Project/tree/Read.me-edits#ci-pipeline)
 * [Running Costs](https://github.com/hjt523/QA_DevOps_Final_Project/tree/Read.me-edits#running-costs)
 * [Future Development](https://github.com/hjt523/QA_DevOps_Final_Project/tree/Read.me-edits#future-development)
@@ -73,6 +74,10 @@ Day  1 :
 Day 2 :
 
 ![image](https://user-images.githubusercontent.com/81659044/124634741-98754580-de7e-11eb-8c47-fd9d32e98c11.png)
+
+### Risk Assessment
+
+
 
 ## Running Costs
 
