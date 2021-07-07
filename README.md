@@ -1,16 +1,16 @@
 # QA_DevOps_Final_Project
 
 ## Contents
-* [Brief](https://github.com/hjt523/QA_DevOps_Final_Project#brief)
-   * [Created With](https://github.com/hjt523/QA_DevOps_Final_Project#created-with)
-* [Project Management](https://github.com/hjt523/QA_DevOps_Final_Project#project-management)
-   * [Kanban board progress](https://github.com/hjt523/QA_DevOps_Final_Project#todo-kanban-board-progress)
-* [CI Pipeline](https://github.com/hjt523/QA_DevOps_Final_Project#ci-pipeline)
-* [Running Costs](https://github.com/hjt523/QA_DevOps_Final_Project#running-costs)
-* [Future Development](https://github.com/hjt523/QA_DevOps_Final_Project#future-development)
-* [Contributors](https://github.com/hjt523/QA_DevOps_Final_Project#contributors)
-* [Acknowledgments](https://github.com/hjt523/QA_DevOps_Final_Project#acknowledgements)
-* [Licensing](https://github.com/hjt523/QA_DevOps_Final_Project#licensing)
+* [Brief](https://github.com/hjt523/QA_DevOps_Final_Project/tree/Read.me-edits#brief)
+   * [Created With](https://github.com/hjt523/QA_DevOps_Final_Project/tree/Read.me-edits#created-with)
+* [Project Management](https://github.com/hjt523/QA_DevOps_Final_Project/tree/Read.me-edits#project-management)
+   * [Kanban board progress](https://github.com/hjt523/QA_DevOps_Final_Project/tree/Read.me-edits#todo-kanban-board-progress)
+* [CI Pipeline](https://github.com/hjt523/QA_DevOps_Final_Project/tree/Read.me-edits#ci-pipeline)
+* [Running Costs](https://github.com/hjt523/QA_DevOps_Final_Project/tree/Read.me-edits#running-costs)
+* [Future Development](https://github.com/hjt523/QA_DevOps_Final_Project/tree/Read.me-edits#future-development)
+* [Contributors](https://github.com/hjt523/QA_DevOps_Final_Project/tree/Read.me-edits#contributors)
+* [Acknowledgments](https://github.com/hjt523/QA_DevOps_Final_Project/tree/Read.me-edits#acknowledgements)
+* [Licensing](https://github.com/hjt523/QA_DevOps_Final_Project/tree/Read.me-edits#licensing)
 
 ## Brief 
 
