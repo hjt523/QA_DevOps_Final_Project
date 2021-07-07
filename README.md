@@ -1,7 +1,5 @@
 # QA_DevOps_Final_Project
 
-The dev branch
-
 ## Contents
 * [Brief](https://github.com/hjt523/QA_DevOps_Final_Project#brief)
    * [Created With](https://github.com/hjt523/QA_DevOps_Final_Project#created-with)
@@ -25,6 +23,10 @@ Scrum master - Tom
 Product owner - Amir
 Merge manager - Harry
 Chief technician - Jack
+
+### Created With
+
+
 
 ## Todo Kanban Board Progress:
 
