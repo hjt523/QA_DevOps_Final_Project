@@ -7,7 +7,7 @@ resource "aws_eks_cluster" "cluster" {
   # depends_on = var.iam_roles_eks_cluster
 }
 
-resource "aws_eks_node_group" "node_group" {
+resource "aws_eks_node_group" "project_node_group" {
   cluster_name = aws_eks_cluster.cluster.name
   node_group_name = "project_node_group"
   node_role_arn = var.node_iam_role_arn
