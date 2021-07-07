@@ -13,7 +13,6 @@ phases:
       
   build:
     commands:
-      - cat ~/.aws/credentials
       - terraform --version
       - terraform init -input=false
       - terraform plan -var-file="secret.tfvars" 
