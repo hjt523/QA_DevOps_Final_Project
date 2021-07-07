@@ -1,11 +1,12 @@
-resource "aws_eks_cluster" "cluster" {
-  name = "project_cluster"
+resource "aws_eks_cluster" "project_cluster_1" {
+  name = "project_cluster_1"
   role_arn = var.cluster_iam_role_arn
   vpc_config {
     subnet_ids = var.available_subnets
   }
   # depends_on = var.iam_roles_eks_cluster
 }
+
 
 resource "aws_eks_node_group" "project_node_group" {
   cluster_name = aws_eks_cluster.cluster.name
