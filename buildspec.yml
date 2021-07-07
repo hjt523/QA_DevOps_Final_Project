@@ -1,0 +1,28 @@
+
+version: 0.2
+
+phases:
+  install:
+    runtime-versions:
+      python: 3.7
+    commands:
+      # Terraform
+      - apt-get update && apt-get install -y gnupg software-properties-common curl
+      - curl -fsSL https://apt.releases.hashicorp.com/gpg | apt-key add -
+      - apt-add-repository "deb [arch=amd64] https://apt.releases.hashicorp.com $(lsb_release -cs) main"
+      - apt-get update && apt-get install terraform
+      
+      # Kubectl
+      - curl -LO https://storage.googleapis.com/kubernetes-release/release/`curl -s https://storage.googleapis.com/kubernetes-release/release/stable.txt`/bin/linux/amd64/kubectl
+      - mv ./kubectl /usr/local/bin/kubectl 
+      
+  build:
+    commands:
+    
+      - terraform --version
+      - terraform init -input=false
+      - terraform plan -var-file="secret.tfvars" 
+      - terraform apply -auto-approve -var-file="secret.tfvars" 
+      
+      - aws eks --region eu-west-2 update-kubeconfig --name project_cluster
+
