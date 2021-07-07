@@ -44,7 +44,7 @@ Our CI pipeline is displayed below.
 
 ## Project Management
 
-We started off using Jira for our project management but when we wanted to set up Jira-Github integration we found it a bit too tempremental to implement. As many of us had already used Jira before and were familiar with Jira and Trello we decided to use the Github Projects tab for our Kanban board. One feature that was particularly attractive from the Github Projects tab was the ability to automate pull requests for tasks depending on their designation. 
+We started off using Jira for our project management but when we wanted to set up Jira-Github integration we found it a bit too tempremental to implement. As many of us had already used Jira before and were familiar with Jira and Trello we decided to use the Github Projects tab for our Kanban board. One feature that was particularly attractive from the Github Projects tab was the ability to automate pull requests for tasks depending on their designation. Our team had daily Scrum meetings to decide our outcomes for the day and to keep other team members appraised of our progress. 
 
 ### Todo Kanban Board Progress:
 
