@@ -18,7 +18,6 @@ phases:
       
   build:
     commands:
-    
       - terraform --version
       - cd ./Terraform
       - terraform init #-input=false
