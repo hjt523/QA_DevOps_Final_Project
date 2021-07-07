@@ -1,3 +1,3 @@
-access_key =  "AKIARFFIVSUQJVUYUYVB"
-secret_key = "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"
+access_key =  "AKIARFFIVSUQDJOVG4GH"
+secret_key = "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"
 db_password = "rootroot"
