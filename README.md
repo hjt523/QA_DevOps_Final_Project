@@ -1,6 +1,7 @@
 # QA_DevOps_Final_Project
 
 ## Contents
+
 * [Brief](https://github.com/hjt523/QA_DevOps_Final_Project/tree/DEV#brief)
    * [Created With](https://github.com/hjt523/QA_DevOps_Final_Project/tree/DEV#created-with)
 * [Scope](https://github.com/hjt523/QA_DevOps_Final_Project/tree/DEV#scope)
@@ -74,6 +75,10 @@ Day 2 :
 
 ![image](https://user-images.githubusercontent.com/81659044/124634741-98754580-de7e-11eb-8c47-fd9d32e98c11.png)
 
+### Risk Assessment
+
+![image](https://raw.githubusercontent.com/hjt523/QA_DevOps_Final_Project/Read.me-edits/images/Risk.png)
+
 ## Running Costs
 
 ## Future Development
@@ -109,4 +114,3 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
-
