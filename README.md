@@ -1,19 +1,30 @@
 # QA_DevOps_Final_Project
 
--[Brief](https://github.com/hjt523/QA_DevOps_Final_Project/blob/DEV/README.md#brief)
--[Scope](https://github.com/hjt523/QA_DevOps_Final_Project/blob/DEV/README.md#scope)
--[The Teams Approach](https://github.com/hjt523/QA_DevOps_Final_Project/blob/DEV/README.md#the-teams-approach)
--[CI/CD Pipeline](https://github.com/hjt523/QA_DevOps_Final_Project/blob/DEV/README.md#scope)
+- [Brief](https://github.com/hjt523/QA_DevOps_Final_Project/blob/DEV/README.md#brief)
+- [Scope](https://github.com/hjt523/QA_DevOps_Final_Project/blob/DEV/README.md#scope)
+- [The Teams Approach](https://github.com/hjt523/QA_DevOps_Final_Project/blob/DEV/README.md#the-teams-approach)
+- [CI/CD Pipeline](https://github.com/hjt523/QA_DevOps_Final_Project/blob/DEV/README.md#cicd-pipeline)
+- [Risk Assessment](https://github.com/hjt523/QA_DevOps_Final_Project/blob/DEV/README.md#risk-assessment)
 
 
 
 
 
 ## Brief
+
+
 ## Scope
+
+
 ## The Teams Approach
+
+
 ## CI/CD Pipeline
+
+
 ## Risk Assessment
+
+
 
 
 
