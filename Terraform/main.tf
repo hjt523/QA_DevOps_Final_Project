@@ -16,6 +16,15 @@ module "subnet" {
     vpc_cidr_block = module.vpc.vpc_cidr_block
 }
 
+
+
+module "igw" {
+    source = "./IGW"
+    vpc_id = module.vpc.vpc_id
+    subnet_1 = module.subnet.subnet_1
+    subnet_2 = module.subnet.subnet_2
+}
+
 module "iam" {
     source = "./IAM"
 }
