@@ -42,8 +42,7 @@ phases:
       #- docker build -t aabdurrahman/nginx:latest
       #- docker push -t aabdurrahman/nginx:latest
       #- docker-compose up -d
-  deploy:
-    commands:
+
       - kubectl create namespace clusterspace
       - kubectl apply -f /deploy/frontend.yaml
       - kubectl apply -f /deploy/backend.yaml
