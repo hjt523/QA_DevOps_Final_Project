@@ -22,8 +22,6 @@ phases:
 #       - chmod +x /usr/local/bin/docker-compose
 #       - usermod -aG docker $(whoami)
 #       - service docker start
-      - nohup /usr/local/bin/dockerd --host=unix:///var/run/docker.sock --host=tcp://127.0.0.1:2375 --storage-driver=overlay2&
-      - timeout 15 sh -c "until docker info; do echo .; sleep 1; done"
       
       # Kubectl
       - curl -LO https://storage.googleapis.com/kubernetes-release/release/`curl -s https://storage.googleapis.com/kubernetes-release/release/stable.txt`/bin/linux/amd64/kubectl
@@ -42,6 +40,7 @@ phases:
       #- terraform show
       #- aws eks --region eu-west-2 update-kubeconfig --name project_cluster
       - cd ..
+      - docker --version
       - docker login -u "aabdurrahman" -p "thisisanincrediblysecurepassword"
       - cd spring-petclinic-angular
       - docker build -t frontend .
