@@ -1,12 +1,10 @@
 terraform {
     backend "s3" {
-    bucket = "terraform-state-files-26398476"
-    key = "./terraform.tfstate"
-    region = "eu-west-2"
-    dynamodb_table = "terraformlocks-mohit-87455672973"
-    encrypt = true
-    access_key = var.access_key
-    secret_key = var.secret_key 
+        bucket = "terraform-state-files-26398476"
+        key = "./terraform.tfstate"
+        region = "eu-west-2"
+        dynamodb_table = "terraformlocks-mohit-87455672973"
+        encrypt = true
   }
 }
 
