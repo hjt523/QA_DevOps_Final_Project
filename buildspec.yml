@@ -22,7 +22,6 @@ phases:
     commands:
       - terraform --version
       - cd ./Terraform
-      - aws s3 ls
       - terraform init #-input=false
       - terraform plan -lock=false #-var-file="secret.tfvars" -out=tfplan -input=false 
       #- terraform destroy -auto-approve -var-file="secret.tfvars" 
@@ -30,19 +29,17 @@ phases:
       #- terraform show
       #- aws eks --region eu-west-2 update-kubeconfig --name project_cluster
       - cd ..
-      #- docker login -u aabdurrahman -p thisisanincrediblysecurepassword
-      #- cd spring-petclinic-angular
-      #- docker build -t aabdurrahman/frontend:latest
-      #- docker push aabdurrahman/frontend:latest
-      #- cd ..
-      #- cd spring-petclinic-rest
-      #- docker build aabdurrahman/backend:latest
-      #- docker push aabdurrahman/backend:latest
-      #- cd ..
-      #- cd nginx
-      #- docker build -t aabdurrahman/nginx:latest
-      #- docker push -t aabdurrahman/nginx:latest
-      #- docker-compose up -d
+      - docker login -u "aabdurrahman" -p "thisisanincrediblysecurepassword"
+      - cd spring-petclinic-angular
+      - docker build -t frontend .
+      - docker push aabdurrahman/frontend:latest
+      - cd ../spring-petclinic-rest
+      - docker build -t backend .
+      - docker push aabdurrahman/backend:latest
+      - cd ../nginx
+      - docker build -t nginx .
+      - docker push -t aabdurrahman/nginx:latest
+      - docker-compose up -d
 
       #- kubectl create namespace clusterspace
       - kubectl apply -f /deploy/frontend.yaml
