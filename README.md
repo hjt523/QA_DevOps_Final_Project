@@ -51,7 +51,7 @@ During the week of development, the team was required to run daily scrums, with 
   * AWS Codebuild - We decided to use AWS Codebuild rather than Jenkins to automate the building of our project in order to showcase our familiarity with AWS. 
   * AWS EKS - To start run and scale our Kubernetes functionalities.
 * Terraform - To automate the creation of the instances on AWS and automate the creation of the EKS cluster. 
-* Docker (Compose) - To create our containers that make up the Kubernetes pods.
+* Docker (Compose) - To create our containers that make up the Kubernetes pods. Our docker images are hosted here: https://hub.docker.com/u/aabdurrahman
 * Nginx - To act as a reverse proxy.
 * Kubernetes - To orchestrate and manage our containers and virtual machines.
 
@@ -75,13 +75,20 @@ Day 2 :
 
 ![image](https://user-images.githubusercontent.com/81659044/124634741-98754580-de7e-11eb-8c47-fd9d32e98c11.png)
 
+Day 3 :
+
+![image](https://raw.githubusercontent.com/hjt523/QA_DevOps_Final_Project/Pipelinestuff/images/Day%203.png)
+
 ### Risk Assessment
 
 ![image](https://raw.githubusercontent.com/hjt523/QA_DevOps_Final_Project/Read.me-edits/images/Risk.png)
 
 ## Running Costs
 
+
 ## Future Development
+
+- Add a functionality to make security groups update with every running of the application rather than manually entering ports to open.
 
 ## Contributors
 

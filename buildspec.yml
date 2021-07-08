@@ -4,7 +4,8 @@ version: 0.2
 phases:
   install:
     runtime-versions:
-      python: 3.7
+    #       python: 3.7
+      docker: 18
     commands:
       # Terraform
       - apt-get update && apt-get install -y gnupg software-properties-common curl
@@ -12,25 +13,60 @@ phases:
       - apt-add-repository "deb [arch=amd64] https://apt.releases.hashicorp.com $(lsb_release -cs) main"
       - apt-get update && apt-get install terraform
       
-      # Kubectl
+      # Docker & docker-compose
+      #- apt-get install -y systemd
+#       - curl https://get.docker.com | bash
+#       - apt install -y curl jq
+#       - version=$(curl -s https://api.github.com/repos/docker/compose/releases/latest | jq -r '.tag_name')
+#       - curl -L "https://github.com/docker/compose/releases/download/${version}/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
+#       - chmod +x /usr/local/bin/docker-compose
+#       - usermod -aG docker $(whoami)
+#       - service docker start
+      
+     #  Kubectl
       - curl -LO https://storage.googleapis.com/kubernetes-release/release/`curl -s https://storage.googleapis.com/kubernetes-release/release/stable.txt`/bin/linux/amd64/kubectl
+      - chmod +x ./kubectl
       - mv ./kubectl /usr/local/bin/kubectl 
+      
       
   build:
     commands:
       - terraform --version
       - cd ./Terraform
       - terraform init #-input=false
-      #- terraform plan -var-file="secret.tfvars" 
-      - terraform destroy -auto-approve -var-file="secret.tfvars" 
-      - terraform apply -auto-approve -var-file="secret.tfvars" 
-      #  TRYING ADDITION OF DB VARIABLES
-      - cd ./RDS
-      - terraform plan -var "db_endpoint"=aws_db_instance.default.endpoint
-      - terraform apply -auto-approve -var "db_endpoint"=aws_db_instance.default.endpoint
-      - terraform plan -var "db_port"=aws_db_instance.default.port
-      - terraform apply -auto-approve -var "db_port"=aws_db_instance.default.port
-      # END OF ADDITION      
-      - aws eks --region eu-west-2 update-kubeconfig --name project_cluster
+
+      - terraform plan -lock=false #-var-file="secret.tfvars" -out=tfplan -input=false 
+      #- terraform destroy -auto-approve -var-file="secret.tfvars" 
+      - terraform apply -auto-approve -lock=false #-var-file="secret.tfvars" #-input=false tfplan 
+      #- terraform show
+      - aws configure set aws_access_key_id "AKIARFFIVSUQDJOVG4GH"
+      - aws configure set aws_secret_access_key "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"
+      - aws configure set region "eu-west-2"
+      - aws configure set output "json"
+      - aws eks  update-kubeconfig --region eu-west-2 --name project_cluster_1
+
       - cd ..
+      # - docker --version
+      # - docker login -u "aabdurrahman" -p "thisisanincrediblysecurepassword"
+      # - cd spring-petclinic-angular
+      # - docker build -t frontend .
+      # - docker push aabdurrahman/frontend:latest
+      # - cd ../spring-petclinic-rest
+      # - docker build -t backend .
+      # - docker push aabdurrahman/backend:latest
+      # - cd ../nginx
+      # - docker build -t nginx .
+      # - docker push -t aabdurrahman/nginx:latest
+      #- docker-compose build --parallel
+      #- docker-compose up -d
+
+      #- kubectl create namespace clusterspace
+      - cd ./deploy
+      - kubectl apply -f nginx.yaml
+      - kubectl apply -f backend.yaml
+      - kubectl apply -f frontend.yaml
+      - cd ..
+      - kubectl get services
+      - kubectl describe services nginx
+
 
