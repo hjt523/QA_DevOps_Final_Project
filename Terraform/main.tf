@@ -90,5 +90,3 @@ module "rds" {
     vpc_security_group_ids = [module.security_group.sg_id]
 }
 
-
-
