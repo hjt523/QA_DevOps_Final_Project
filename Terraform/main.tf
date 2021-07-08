@@ -1,6 +1,21 @@
+data "terraform_remote_state" "main" {
+    backend = "s3"
+    config = {
+        bucket  = "terraform-state-files-230950" #"terraform-state-files-26398476"
+        key     = "./terraform.tfstate"
+        region  = "eu-west-2"
+    }
+}
+
+variable "access_key" {}
+
+variable "secret_key" {}
+
+variable "db_password" {}
+
 provider "aws" {
     access_key = var.access_key
-    secret_key = var.secret_key
+    secret_key = var.secret_key 
     region = "eu-west-2"
     # shared_credentials_file = "~/.aws/credentials"
 }
@@ -50,6 +65,8 @@ module "instances" {
 module "rds" {
     source = "./RDS"
     db_password=var.db_password
+    subnet_ids = module.subnet.subnet_ids
+    vpc_security_group_ids = [module.security_group.sg_id]
 }
 
 
