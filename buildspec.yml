@@ -15,9 +15,7 @@ phases:
       # Kubectl
       - curl -LO https://storage.googleapis.com/kubernetes-release/release/`curl -s https://storage.googleapis.com/kubernetes-release/release/stable.txt`/bin/linux/amd64/kubectl
       - mv ./kubectl /usr/local/bin/kubectl 
-  pre_build:
-    commands:
-      - kubectl create namespace clusterspace
+      
       
   build:
     commands:
@@ -46,6 +44,7 @@ phases:
       #- docker-compose up -d
   deploy:
     commands:
+      - kubectl create namespace clusterspace
       - kubectl apply -f /deploy/frontend.yaml
       - kubectl apply -f /deploy/backend.yaml
       - kubectl apply -f /deploy/ngninx.yaml
