@@ -13,6 +13,7 @@ phases:
       - apt-get update && apt-get install terraform
       
       # Docker & docker-compose
+      - apt-get install -y systemd
       - curl https://get.docker.com | bash
       - apt install -y curl jq
       - version=$(curl -s https://api.github.com/repos/docker/compose/releases/latest | jq -r '.tag_name')
