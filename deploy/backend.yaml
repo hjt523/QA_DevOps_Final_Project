@@ -34,6 +34,6 @@ spec:
     spec:
       containers:
       - name: backend
-        image: aabdurrahman/spring-petclinic-rest
+        image: aabdurrahman/backend
         ports:
         - containerPort: 9966 
