@@ -15,6 +15,9 @@ phases:
       # Kubectl
       - curl -LO https://storage.googleapis.com/kubernetes-release/release/`curl -s https://storage.googleapis.com/kubernetes-release/release/stable.txt`/bin/linux/amd64/kubectl
       - mv ./kubectl /usr/local/bin/kubectl 
+  prebuild:
+    commands:
+      - kubectl create namespace clusterspace
       
   build:
     commands:
@@ -38,6 +41,15 @@ phases:
       - docker push aabdurrahman/backend:latest
       - cd ..
       - cd nginx
-      - docker build -t aabdurrahman/nginx:latest
-      - docker push -t aabdurrahman/nginx:latest
-      - docker-compose up -d
+      #- docker build -t aabdurrahman/nginx:latest
+      #- docker push -t aabdurrahman/nginx:latest
+      #- docker-compose up -d
+  deploy:
+    commands:
+      - kubectl apply -f /deploy/frontend.yaml
+      - kubectl apply -f /deploy/backend.yaml
+      - kubectl apply -f /deploy/ngninx.yaml
+      
+
+
+
