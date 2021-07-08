@@ -29,16 +29,16 @@ phases:
       - cd ..
       - cd spring-petclinic-angular
       - docker build -t aabdurrahman:frontend
-      - echo Pushing the Docker image: frontend...
+      #- echo Pushing the Docker image: frontend...
       - docker push aabdurrahman/frontend
       - cd ..
       - cd spring-petclinic-rest
       - docker build -t aabdurrahman:backend
-      - echo Pushing the Docker image: backend...
+      #- echo Pushing the Docker image: backend...
       - docker push aabdurrahman/backend
       - cd ..
       - cd nginx
       - docker build -t aabdurrahman:nginx
-      - echo Pushing the Docker image: nginx...
+      #- echo Pushing the Docker image: nginx...
       - docker push aabdurrahman/nginx
       - docker-compose up -d 
