@@ -51,7 +51,7 @@ During the week of development, the team was required to run daily scrums, with 
   * AWS Codebuild - We decided to use AWS Codebuild rather than Jenkins to automate the building of our project in order to showcase our familiarity with AWS. 
   * AWS EKS - To start run and scale our Kubernetes functionalities.
 * Terraform - To automate the creation of the instances on AWS and automate the creation of the EKS cluster. 
-* Docker (Compose) - To create our containers that make up the Kubernetes pods.
+* Docker (Compose) - To create our containers that make up the Kubernetes pods. Our docker images are hosted here: https://hub.docker.com/u/aabdurrahman
 * Nginx - To act as a reverse proxy.
 * Kubernetes - To orchestrate and manage our containers and virtual machines.
 
