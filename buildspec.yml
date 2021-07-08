@@ -51,8 +51,8 @@ phases:
       # - cd ../nginx
       # - docker build -t nginx .
       # - docker push -t aabdurrahman/nginx:latest
-      - docker-compose build --parallel
-      - docker-compose up -d
+      #- docker-compose build --parallel
+      #- docker-compose up -d
 
       #- kubectl create namespace clusterspace
       - kubectl apply -f /deploy/frontend.yaml
