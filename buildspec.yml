@@ -13,14 +13,15 @@ phases:
       - apt-get update && apt-get install terraform
       
       # Docker & docker-compose
-      - apt-get install -y systemd
+      #- apt-get install -y systemd
       - curl https://get.docker.com | bash
       - apt install -y curl jq
       - version=$(curl -s https://api.github.com/repos/docker/compose/releases/latest | jq -r '.tag_name')
       - curl -L "https://github.com/docker/compose/releases/download/${version}/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
       - chmod +x /usr/local/bin/docker-compose
+      - dockerd
       - usermod -aG docker $(whoami)
-      - systemctl restart docker
+      - service docker start
       
       # Kubectl
       - curl -LO https://storage.googleapis.com/kubernetes-release/release/`curl -s https://storage.googleapis.com/kubernetes-release/release/stable.txt`/bin/linux/amd64/kubectl
