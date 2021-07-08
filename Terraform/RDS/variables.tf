@@ -3,3 +3,7 @@ variable "db_password" {
     # type=string
     sensitive = true
 }
+
+variable "subnet_ids" {}
+
+variable "vpc_security_group_ids" {}
