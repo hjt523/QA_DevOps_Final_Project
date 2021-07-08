@@ -6,6 +6,7 @@ terraform {
     dynamodb_table = "terraformlocks-mohit-87455672973"
     encrypt = true
   }
+}
 
 variable "access_key" {}
 
@@ -34,7 +35,7 @@ resource "aws_dynamodb_table" "terraform-locks" {
 data "terraform_remote_state" "main" {
     backend = "s3"
     config = {
-        bucket  = "terraform-state-files-230950" #"terraform-state-files-26398476"
+        bucket  = "terraform-state-files-26398476"
         key     = "./terraform.tfstate"
         region  = "eu-west-2"
     }
@@ -88,6 +89,4 @@ module "rds" {
     subnet_ids = module.subnet.subnet_ids
     vpc_security_group_ids = [module.security_group.sg_id]
 }
-
-
 

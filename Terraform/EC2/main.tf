@@ -1,4 +1,4 @@
-resource "aws_instance" "nginx" {
+resource "aws_instance" "manager_node" {
     ami = var.ami
     instance_type = var.intance_type
 
@@ -7,31 +7,31 @@ resource "aws_instance" "nginx" {
     vpc_security_group_ids      = var.vpc_security_group_ids
     user_data                   = var.user_data
     tags = {
-        Name = "NginX"
+        Name = "manager_node"
     }
 }
 
-resource "aws_instance" "frontend" {
-    ami = var.ami
-    instance_type = var.intance_type
+# resource "aws_instance" "frontend" {
+#     ami = var.ami
+#     instance_type = var.intance_type
 
-    associate_public_ip_address = var.enable_public_ip
-    subnet_id                   = var.subnet_id
-    vpc_security_group_ids      = var.vpc_security_group_ids
-    user_data                   = var.user_data
-    tags = {
-        Name = "Frontend"
-    }
-}
+#     associate_public_ip_address = var.enable_public_ip
+#     subnet_id                   = var.subnet_id
+#     vpc_security_group_ids      = var.vpc_security_group_ids
+#     user_data                   = var.user_data
+#     tags = {
+#         Name = "Frontend"
+#     }
+# }
 
-resource "aws_instance" "backend" {
-    ami = var.ami
-    instance_type = var.intance_type
-    associate_public_ip_address = var.enable_public_ip
-    subnet_id                   = var.subnet_id
-    vpc_security_group_ids      = var.vpc_security_group_ids
-    user_data                   = var.user_data
-    tags = {
-        Name = "Backend"
-    }
-}
+# resource "aws_instance" "backend" {
+#     ami = var.ami
+#     instance_type = var.intance_type
+#     associate_public_ip_address = var.enable_public_ip
+#     subnet_id                   = var.subnet_id
+#     vpc_security_group_ids      = var.vpc_security_group_ids
+#     user_data                   = var.user_data
+#     tags = {
+#         Name = "Backend"
+#     }
+# }
