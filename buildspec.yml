@@ -24,6 +24,13 @@ phases:
       #- terraform plan -var-file="secret.tfvars" 
       - terraform destroy -auto-approve -var-file="secret.tfvars" 
       - terraform apply -auto-approve -var-file="secret.tfvars" 
+      #  TRYING ADDITION OF DB VARIABLES
+      - cd ./RDS
+      - terraform plan -var "db_endpoint"=aws_db_instance.default.endpoint
+      - terraform apply -auto-approve -var "db_endpoint"=aws_db_instance.default.endpoint
+      - terraform plan -var "db_port"=aws_db_instance.default.port
+      - terraform apply -auto-approve -var "db_port"=aws_db_instance.default.port
+      # END OF ADDITION      
       - aws eks --region eu-west-2 update-kubeconfig --name project_cluster
       - cd ..
 
