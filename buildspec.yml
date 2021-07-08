@@ -29,16 +29,16 @@ phases:
       - terraform show
       #- aws eks --region eu-west-2 update-kubeconfig --name project_cluster
       - cd ..
-      - docker login -u aabdurrahman -p w3d((7y088&7y*£n&(!"4080NU(*£$
-      - cd spring-petclinic-angular
-      - docker build -t aabdurrahman/frontend:latest
-      - docker push aabdurrahman/frontend:latest
-      - cd ..
-      - cd spring-petclinic-rest
-      - docker build aabdurrahman/backend:latest
-      - docker push aabdurrahman/backend:latest
-      - cd ..
-      - cd nginx
+      #- docker login -u "aabdurrahman" -p "w3d((7y088&7y*£n&(!"4080NU(*£$"
+      #- cd spring-petclinic-angular
+      #- docker build -t aabdurrahman/frontend:latest
+      #- docker push aabdurrahman/frontend:latest
+      #- cd ..
+      #- cd spring-petclinic-rest
+      #- docker build aabdurrahman/backend:latest
+      #- docker push aabdurrahman/backend:latest
+      #- cd ..
+      #- cd nginx
       #- docker build -t aabdurrahman/nginx:latest
       #- docker push -t aabdurrahman/nginx:latest
       #- docker-compose up -d
