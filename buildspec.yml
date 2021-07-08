@@ -27,4 +27,4 @@ phases:
       - terraform show
       - aws eks --region eu-west-2 update-kubeconfig --name project_cluster
       - cd ..
-
+      - docker-compose up -d
