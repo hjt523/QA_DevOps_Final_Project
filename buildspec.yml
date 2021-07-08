@@ -42,8 +42,6 @@ phases:
       - aws configure set aws_secret_access_key "JcuZJXOCHr58JYsWH18BhQqVIB/G15HrR7GxaoyT"
       - aws configure set region "eu-west-2"
       - aws configure set output "json"
-
-Message #general-channel
       - aws eks  update-kubeconfig --region eu-west-2 --name project_cluster_1
       # - cd ..
       # - docker --version
