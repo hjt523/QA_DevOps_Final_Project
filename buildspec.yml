@@ -30,10 +30,10 @@ phases:
       #- terraform show
       #- aws eks --region eu-west-2 update-kubeconfig --name project_cluster
       - cd ..
-      - docker login -u aabdurrahman -p thisisanincrediblysecurepassword
-      - cd spring-petclinic-angular
-      - docker build -t aabdurrahman/frontend:latest
-      - docker push aabdurrahman/frontend:latest
+      #- docker login -u aabdurrahman -p thisisanincrediblysecurepassword
+      #- cd spring-petclinic-angular
+      #- docker build -t aabdurrahman/frontend:latest
+      #- docker push aabdurrahman/frontend:latest
       #- cd ..
       #- cd spring-petclinic-rest
       #- docker build aabdurrahman/backend:latest
