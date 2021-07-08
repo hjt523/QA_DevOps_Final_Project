@@ -1,10 +1,11 @@
-data "terraform_remote_state" "main" {
-    backend = "s3"
-    config = {
-        bucket  = "terraform-state-files-230950" #"terraform-state-files-26398476"
-        key     = "./terraform.tfstate"
-        region  = "eu-west-2"
-    }
+terraform {
+    backend "s3" {
+    bucket = "terraform-state-files-26398476"
+    key = "./terraform.tfstate"
+    region = "eu-west-2"
+    dynamodb_table = "terraformlocks-mohit-87455672973"
+    encrypt = true
+  }
 }
 
 variable "access_key" {}
@@ -18,6 +19,26 @@ provider "aws" {
     secret_key = var.secret_key 
     region = "eu-west-2"
     # shared_credentials_file = "~/.aws/credentials"
+}
+
+resource "aws_dynamodb_table" "terraform-locks" {
+    name         = "terraform-locks-mohit-87455672973"
+    billing_mode = "PAY_PER_REQUEST"
+    hash_key     = "LockID"
+
+    attribute {
+        name = "LockID"
+        type = "S"
+    }
+}
+
+data "terraform_remote_state" "main" {
+    backend = "s3"
+    config = {
+        bucket  = "terraform-state-files-230950" #"terraform-state-files-26398476"
+        key     = "./terraform.tfstate"
+        region  = "eu-west-2"
+    }
 }
 
 module "vpc" {
