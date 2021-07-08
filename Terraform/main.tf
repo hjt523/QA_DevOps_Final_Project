@@ -1,7 +1,7 @@
 data "terraform_remote_state" "main" {
     backend = "s3"
     config = {
-        bucket  = "terraform-state-files-230950" #"terraform-state-files-26398476"
+        bucket  = "terraform-state-files-26398476"
         key     = "./terraform.tfstate"
         region  = "eu-west-2"
     }
