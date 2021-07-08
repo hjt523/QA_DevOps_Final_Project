@@ -34,6 +34,7 @@ phases:
       - terraform --version
       - cd ./Terraform
       - terraform init #-input=false
+
       - terraform plan -lock=false #-var-file="secret.tfvars" -out=tfplan -input=false 
       #- terraform destroy -auto-approve -var-file="secret.tfvars" 
       - terraform apply -auto-approve -lock=false #-var-file="secret.tfvars" #-input=false tfplan 
@@ -43,6 +44,7 @@ phases:
       - aws configure set region "eu-west-2"
       - aws configure set output "json"
       - aws eks  update-kubeconfig --region eu-west-2 --name project_cluster_1
+
       - cd ..
       # - docker --version
       # - docker login -u "aabdurrahman" -p "thisisanincrediblysecurepassword"
