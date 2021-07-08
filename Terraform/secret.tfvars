@@ -1,3 +1,3 @@
-access_key =  "AKIARFFIVSUQDJOVG4GH"
-secret_key = "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"
-db_password = "rootroot"
+access_key =  ${TF_VAR_access_key}
+secret_key = ${TF_VAR_secret_key}
+db_password = ${TF_VAR_db_password}
