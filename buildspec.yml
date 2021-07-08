@@ -43,7 +43,7 @@ phases:
       - aws configure set region "eu-west-2"
       - aws configure set output "json"
       - aws eks  update-kubeconfig --region eu-west-2 --name project_cluster_1
-      # - cd ..
+      - cd ..
       # - docker --version
       # - docker login -u "aabdurrahman" -p "thisisanincrediblysecurepassword"
       # - cd spring-petclinic-angular
@@ -59,9 +59,10 @@ phases:
       #- docker-compose up -d
 
       #- kubectl create namespace clusterspace
-      - kubectl apply -f deploy/nginx.yaml
-      - kubectl apply -f deploy/backend.yaml
-      - kubectl apply -f deploy/frontend.yaml
+
+      - kubectl apply -f /deploy/nginx.yaml
+      - kubectl apply -f /deploy/backend.yaml
+      - kubectl apply -f /deploy/frontend.yaml
       
 
       
