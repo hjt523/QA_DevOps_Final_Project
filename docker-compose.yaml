@@ -1,0 +1,23 @@
+version: "3.8"
+services:
+  nginx:
+    container_name: nginx
+    build: ./nginx
+    image: nginx
+    ports:
+    - target: 80
+      published: 80
+  frontend:
+    container_name: frontend
+    build: ./spring-petclinic-angular
+    image: frontend
+    ports:
+      - target: 8090
+        published: 8090
+  backend:
+    container_name: backend
+    build: ./spring-petclinic-rest
+    image: backend
+    ports:
+      - target: 9966
+        published: 9966
