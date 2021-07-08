@@ -5,7 +5,7 @@ phases:
   install:
     runtime-versions:
       python: 3.7
-      docker: 20
+      docker: 19
     commands:
       # Terraform
       - apt-get update && apt-get install -y gnupg software-properties-common curl
