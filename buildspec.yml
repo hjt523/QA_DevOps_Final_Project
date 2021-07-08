@@ -59,9 +59,9 @@ phases:
       #- docker-compose up -d
 
       #- kubectl create namespace clusterspace
-      - kubectl apply -f /deploy/nginx.yaml
-      - kubectl apply -f /deploy/backend.yaml
-      - kubectl apply -f /deploy/frontend.yaml
+      - kubectl apply -f deploy/nginx.yaml
+      - kubectl apply -f deploy/backend.yaml
+      - kubectl apply -f deploy/frontend.yaml
       
 
       
