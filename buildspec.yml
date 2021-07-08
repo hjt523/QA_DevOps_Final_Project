@@ -28,14 +28,14 @@ phases:
       #- aws eks --region eu-west-2 update-kubeconfig --name project_cluster
       - cd ..
       - cd spring-petclinic-angular
-      - docker build aabdurrahman/frontend
+      - docker build ./frontend
       - docker push aabdurrahman/frontend
       - cd ..
       - cd spring-petclinic-rest
-      - docker build aabdurrahman/backend
+      - docker build ./backend
       - docker push aabdurrahman/backend
       - cd ..
       - cd nginx
-      - docker build aabdurrahman/nginx
+      - docker build ./nginx
       - docker push aabdurrahman/nginx
       - docker-compose up -d 
