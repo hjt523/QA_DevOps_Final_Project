@@ -88,6 +88,8 @@ Day 3 :
 
 ## Future Development
 
+- Add a functionality to make security groups update with every running of the application rather than manually entering ports to open.
+
 ## Contributors
 
 Jack, Harry, Amir, Thomas. 
