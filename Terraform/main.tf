@@ -6,7 +6,6 @@ terraform {
     dynamodb_table = "terraformlocks-mohit-87455672973"
     encrypt = true
   }
-}
 
 variable "access_key" {}
 
