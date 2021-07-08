@@ -38,7 +38,7 @@ phases:
       #- terraform destroy -auto-approve -var-file="secret.tfvars" 
       - terraform apply -auto-approve -lock=false #-var-file="secret.tfvars" #-input=false tfplan 
       #- terraform show
-      - aws eks --region eu-west-2 update-kubeconfig --name project_cluster
+      - aws eks --region eu-west-2 update-kubeconfig --name project_cluster_1
       # - cd ..
       # - docker --version
       # - docker login -u "aabdurrahman" -p "thisisanincrediblysecurepassword"
