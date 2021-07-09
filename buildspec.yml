@@ -39,13 +39,21 @@ phases:
       #- terraform destroy -auto-approve -var-file="secret.tfvars" 
       - terraform apply -auto-approve -lock=false #-var-file="secret.tfvars" #-input=false tfplan 
       #- terraform show
+      
       - aws configure set aws_access_key_id "AKIARFFIVSUQDJOVG4GH"
       - aws configure set aws_secret_access_key "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"
       - aws configure set region "eu-west-2"
       - aws configure set output "json"
       - aws eks  update-kubeconfig --region eu-west-2 --name project_cluster_1
-
       - cd ..
+      #  TRYING ADDITION OF DB VARIABLES
+      - cd ./RDS
+      - terraform plan -var "db_endpoint"=aws_db_instance.default.endpoint
+      - terraform apply -auto-approve -var "db_endpoint"=aws_db_instance.default.endpoint
+      - terraform plan -var "db_port"=aws_db_instance.default.port
+      - terraform apply -auto-approve -var "db_port"=aws_db_instance.default.port
+      - cd ..
+      # END OF ADDITION
       # - docker --version
       # - docker login -u "aabdurrahman" -p "thisisanincrediblysecurepassword"
       # - cd spring-petclinic-angular
