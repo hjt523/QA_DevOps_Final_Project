@@ -42,7 +42,7 @@ The team was required to plan, design and implement an automated deployment solu
 
 During the week of development, the team was required to run daily scrums, with the Trainer present, to record progress, discuss implementations and ensure the maintainance of a project planning board. The board would be the most useful piece of technology to track progress and view tasks to be completed, as well as open any issues.
 
-### Created With
+## Created With
 
 * Git - Version control.
 * Github - To manage our repository and to sort our workflow on. Using the Github Projects feature we set up a basic Kanban style board with the intention of automating task creation and review.
@@ -99,7 +99,7 @@ Day 4 :
 ![image](https://raw.githubusercontent.com/hjt523/QA_DevOps_Final_Project/main/images/MicrosoftTeams-image.png)
 
 
-### Current State
+## Current State
 
 We have come very close to achieving a minimum viable product but unfortunately due to lack of time, haven't quite been able to deliver. We have all of the necassary infrastructure up and working but problems with the REST API held us back. NGINX, Docker, Terraform, and the basics of Kubernetes have all been set up on an automated CodeBuild pipeline that fetches changes from GitHub and pushes them into our Terraform created instances. The deployed instances have docker images deployed on them, and our load balancer functions correctly. We have the basics of a database set up to which the app can save data to. 
 
@@ -158,7 +158,7 @@ What could we improve on?
 - We could have rotated tasks and reviewed each others work in a more stringent fashion so we wouldn't waste so much time on trivial debugging like misplaced commas or spelling errors.
 
 
-### Future Development
+## Future Development
 
 - Add a functionality to make security groups update with every running of the application rather than manually entering ports to open.
 - Automate the creation of Docker Images, which would then be pushed to Docker Hub.
