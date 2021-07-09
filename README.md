@@ -19,7 +19,7 @@
 
 ## Brief 
 
-We were required to plan, design and implement a solution for automating the development workflows and deployments of the application below. As part of our final deliverable you will need to discuss the project in a presentation and demonstrate these workflows. We were required to choose DevOps technologies that we thought best suited the task at hand and to configure an automated deployment to a cloud service. 
+We were required to plan, design and implement a solution for automating the development workflows and deployments of a third-party application. As part of our final deliverable we will discuss the project in a presentation and demonstrate these workflows. We were given flexibilty to choose the technologies that would be used in order to achieve the minimum viable product. 
 
 Our roles for the project were the following:
 * Scrum master - Tom
