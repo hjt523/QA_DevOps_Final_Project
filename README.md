@@ -77,11 +77,15 @@ Day 2 :
 
 Day 3 :
 
-![image](https://raw.githubusercontent.com/hjt523/QA_DevOps_Final_Project/Pipelinestuff/images/Day%203.png)
+![image](https://raw.githubusercontent.com/hjt523/QA_DevOps_Final_Project/main/images/Day%203.png)
+
+Day 4 :
+
+![image](https://raw.githubusercontent.com/hjt523/QA_DevOps_Final_Project/main/images/Day%204.png)
 
 ### Risk Assessment
 
-![image](https://raw.githubusercontent.com/hjt523/QA_DevOps_Final_Project/Read.me-edits/images/Risk.png)
+![image](https://raw.githubusercontent.com/hjt523/QA_DevOps_Final_Project/main/images/Risk.png)
 
 ## Running Costs
 
