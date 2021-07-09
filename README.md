@@ -12,6 +12,7 @@
 * [Running Costs](https://github.com/hjt523/QA_DevOps_Final_Project/tree/main#running-costs)
 * [Sprint Retrospective](https://github.com/hjt523/QA_DevOps_Final_Project/tree/main#sprint-retrospective)
 * [Future Development](https://github.com/hjt523/QA_DevOps_Final_Project/tree/main#future-development)
+* [Current State](https://github.com/hjt523/QA_DevOps_Final_Project/tree/main#current-state)
 * [Contributors](https://github.com/hjt523/QA_DevOps_Final_Project/tree/main#contributors)
 * [Acknowledgments](https://github.com/hjt523/QA_DevOps_Final_Project/tree/main#acknowledgements)
 * [Licensing](https://github.com/hjt523/QA_DevOps_Final_Project/tree/main#licensing)
@@ -66,6 +67,14 @@ Our CI pipeline is displayed below.
 
 We started off using Jira for our project management but when we wanted to set up Jira-Github integration we found it a bit too tempremental to implement. As many of us had already used Jira before and were familiar with Jira and Trello we decided to use the Github Projects tab for our Kanban board. One feature that was particularly attractive from the Github Projects tab was the ability to automate pull requests for tasks depending on their designation. Our team had daily Scrum meetings to decide our outcomes for the day and to keep other team members appraised of our progress. 
 
+Our feature branch model:
+
+![image](https://raw.githubusercontent.com/hjt523/QA_DevOps_Final_Project/main/images/Feature%20Branch.png)
+
+We managed to distribute work well across our team:
+
+![image](https://raw.githubusercontent.com/hjt523/QA_DevOps_Final_Project/main/images/Commits.png)
+
 ### Todo Kanban Board Progress:
 
 Day  1 :
@@ -95,6 +104,7 @@ Day 4 :
 What worked and what went well?
 - Streamlining the Codebuild process.
 - Ensuring that the Nginx server was accessible.
+- Our feature branch model was very easy to work with.
 
 What caused difficulties and what went wrong?
 - AWS Codebuild being more difficult to deal with than jenkins.
@@ -108,6 +118,26 @@ What could we improve on?
 - Better time management for workflows. We were bottlenecked a number of times waiting on certain tasks to be finished.
 - We could have rotated tasks and reviewed each others work in a more stringent fashion so we wouldn't waste so much time on trivial debugging like misplaced commas or spelling errors.
 
+### Current State
+
+We have come very close to achieving a minimum viable product but unforunately due to lack of time, haven't quite been able to deliver. We have all of the necassary infrastructure up and working but problems with the REST API hold us back. NGINX, Docker, Terraform, and the basics of Kubernetes have all been set up on an automated CodeBuild pipeline that fetches changes from github and pushes them into our Terraform created instances, the instances have docker images deployed on them, and our load balancer functions correctly. We have the basics of a database set up to which the app can save data to. 
+
+Here is an image of our successful build.
+
+![image](https://raw.githubusercontent.com/hjt523/QA_DevOps_Final_Project/main/images/BuildSuccess.png)
+
+Here is an image of our CodeBuild output which recognises that Kubernetes, Docker, and NGINX are functioning.
+
+![image](https://raw.githubusercontent.com/hjt523/QA_DevOps_Final_Project/main/images/Logs.png)
+
+We did make sure all the ports on the network are open as shown here:
+
+![image](https://raw.githubusercontent.com/hjt523/QA_DevOps_Final_Project/main/images/Traffic.png)
+
+The error returned when we ran a curl command on the URL provided by a kubectl command is shown here:
+
+![image](https://raw.githubusercontent.com/hjt523/QA_DevOps_Final_Project/main/images/Curl.png)
+
 ### Future Development
 
 - Add a functionality to make security groups update with every running of the application rather than manually entering ports to open.
@@ -120,7 +150,7 @@ Jack, Harry, Amir, Thomas.
 
 ## Acknowledgements
 
-Everyone at QA for giving us the necassary skills to complete this project.
+Everyone at QA for giving us the necassary skills to complete this project. Vikhil for helping with some troubleshooting.
 
 ## Licensing 
 
