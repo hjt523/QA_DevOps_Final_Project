@@ -137,6 +137,21 @@ The error returned when we ran a curl command on the URL provided by a kubectl c
 
 ![image](https://raw.githubusercontent.com/hjt523/QA_DevOps_Final_Project/main/images/Curl.png)
 
+As a stretch goal, we had planned to implement an external, permanent database for information to be stored. We had begun development on this, but due to time constraints, it could not be completed.
+
+We begun by changing the Application.Properties file as described in the readME of the source files.
+
+![DB-App-Properties](https://github.com/hjt523/QA_DevOps_Final_Project/blob/main/images/DB-app-prop.PNG)
+
+Due to the database being created with Terraform, the outputs for the port and endpoint would be needed as a variable, rather than a static value. These variable were created in the outputs.tf file within the RDS folder.
+
+![DB-Outputs](https://github.com/hjt523/QA_DevOps_Final_Project/blob/main/images/DB-Output.PNG)
+
+With the variables now established, they were put in to the MySQL.Properties file.
+
+![DB-MYSQL-Properties](https://github.com/hjt523/QA_DevOps_Final_Project/blob/main/images/DB-Properties.PNG)
+
+
 ### Future Development
 
 - Add a functionality to make security groups update with every running of the application rather than manually entering ports to open.
