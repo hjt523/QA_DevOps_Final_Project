@@ -104,20 +104,20 @@ What worked and what went well?
 - Our feature branch model was very easy to work with.
 
 What caused difficulties and what went wrong?
-- AWS Codebuild being more difficult to deal with than jenkins.
-- During the process though we had nginx working and things properly containerised we were unable to actually access the app.
+- AWS Codebuild proved to be more difficult to use, compared to Jenkins.
+- Although everything was containerised, and NginX was working, we were unable to access the front-end of the app.
 
 What did we do to address those problems?
 -  Reviewing documentation and combing existing repositories/stack overflow.
 
 What could we improve on?
-- A better choice for the pipeline software.
+- Researched and compared pipeline software extensively, allowing us to choose a more effective one.
 - Better time management for workflows. We were bottlenecked a number of times waiting on certain tasks to be finished.
 - We could have rotated tasks and reviewed each others work in a more stringent fashion so we wouldn't waste so much time on trivial debugging like misplaced commas or spelling errors.
 
 ### Current State
 
-We have come very close to achieving a minimum viable product but unforunately due to lack of time, haven't quite been able to deliver. We have all of the necassary infrastructure up and working but problems with the REST API hold us back. NGINX, Docker, Terraform, and the basics of Kubernetes have all been set up on an automated CodeBuild pipeline that fetches changes from github and pushes them into our Terraform created instances, the instances have docker images deployed on them, and our load balancer functions correctly. We have the basics of a database set up to which the app can save data to. 
+We have come very close to achieving a minimum viable product but unfortunately due to lack of time, haven't quite been able to deliver. We have all of the necassary infrastructure up and working but problems with the REST API held us back. NGINX, Docker, Terraform, and the basics of Kubernetes have all been set up on an automated CodeBuild pipeline that fetches changes from GitHub and pushes them into our Terraform created instances. The deployed instances have docker images deployed on them, and our load balancer functions correctly. We have the basics of a database set up to which the app can save data to. 
 
 Here is an image of our successful build.
 
@@ -138,8 +138,8 @@ The error returned when we ran a curl command on the URL provided by a kubectl c
 ### Future Development
 
 - Add a functionality to make security groups update with every running of the application rather than manually entering ports to open.
-- Create the docker images during the codebuild process rather than creating and pushing them to dockerhub manually.
-- Make sure the app is functional.
+- Automate the creation of Docker Images, which would then be pushed to Docker Hub.
+- Make sure the app is functional and can be used.
 
 ## Contributors
 
@@ -147,7 +147,7 @@ Jack, Harry, Amir, Thomas.
 
 ## Acknowledgements
 
-Everyone at QA for giving us the necassary skills to complete this project. Vikhil for helping with some troubleshooting.
+Everyone at QA for giving us the necessary skills to complete this project. Vikhil for helping with some troubleshooting.
 
 ## Licensing 
 
