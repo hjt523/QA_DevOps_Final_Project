@@ -2,18 +2,19 @@
 
 ## Contents
 
-* [Brief](https://github.com/hjt523/QA_DevOps_Final_Project/tree/DEV#brief)
-   * [Created With](https://github.com/hjt523/QA_DevOps_Final_Project/tree/DEV#created-with)
-* [Scope](https://github.com/hjt523/QA_DevOps_Final_Project/tree/DEV#scope)
-* [Project Planning](https://github.com/hjt523/QA_DevOps_Final_Project/tree/DEV#project-planning)
-* [Project Management](https://github.com/hjt523/QA_DevOps_Final_Project/tree/DEV#project-management)
-   * [Kanban board progress](https://github.com/hjt523/QA_DevOps_Final_Project/tree/DEV#todo-kanban-board-progress)
-* [CI Pipeline](https://github.com/hjt523/QA_DevOps_Final_Project/tree/DEV#ci-pipeline)
-* [Running Costs](https://github.com/hjt523/QA_DevOps_Final_Project/tree/DEV#running-costs)
-* [Future Development](https://github.com/hjt523/QA_DevOps_Final_Project/tree/DEV#future-development)
-* [Contributors](https://github.com/hjt523/QA_DevOps_Final_Project/tree/DEV#contributors)
-* [Acknowledgments](https://github.com/hjt523/QA_DevOps_Final_Project/tree/DEV#acknowledgements)
-* [Licensing](https://github.com/hjt523/QA_DevOps_Final_Project/tree/DEV#licensing)
+* [Brief](https://github.com/hjt523/QA_DevOps_Final_Project/tree/main#brief)
+   * [Created With](https://github.com/hjt523/QA_DevOps_Final_Project/tree/main#created-with)
+* [Scope](https://github.com/hjt523/QA_DevOps_Final_Project/tree/main#scope)
+* [Project Planning](https://github.com/hjt523/QA_DevOps_Final_Project/tree/main#project-planning)
+* [Project Management](https://github.com/hjt523/QA_DevOps_Final_Project/tree/main#project-management)
+   * [Kanban board progress](https://github.com/hjt523/QA_DevOps_Final_Project/tree/main#todo-kanban-board-progress)
+* [CI Pipeline](https://github.com/hjt523/QA_DevOps_Final_Project/tree/main#ci-pipeline)
+* [Running Costs](https://github.com/hjt523/QA_DevOps_Final_Project/tree/main#running-costs)
+* [Future Development](https://github.com/hjt523/QA_DevOps_Final_Project/tree/main#future-development)
+* [Sprint Retrospective](https://github.com/hjt523/QA_DevOps_Final_Project/tree/main#sprint-retrospective)
+* [Contributors](https://github.com/hjt523/QA_DevOps_Final_Project/tree/main#contributors)
+* [Acknowledgments](https://github.com/hjt523/QA_DevOps_Final_Project/tree/main#acknowledgements)
+* [Licensing](https://github.com/hjt523/QA_DevOps_Final_Project/tree/main#licensing)
 
 ## Brief 
 
@@ -93,6 +94,21 @@ Day 4 :
 ## Future Development
 
 - Add a functionality to make security groups update with every running of the application rather than manually entering ports to open.
+
+## Sprint Retrospective
+
+What worked and what went well?
+- Streamlining the Codebuild process.
+
+What caused difficulties and what went wrong?
+- AWS Codebuild being more difficult to deal with than jenkins.
+
+What did we do to address those problems?
+-  Reviewing documentation and combing existing repositories/stack overflow.
+
+What could we improve on?
+- A better choice for the pipeline software.
+- Better time management for workflows.
 
 ## Contributors
 
