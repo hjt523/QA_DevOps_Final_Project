@@ -96,6 +96,8 @@ Day 4 :
 
 ## Running Costs
 
+![image](https://raw.githubusercontent.com/hjt523/QA_DevOps_Final_Project/main/images/MicrosoftTeams-image.png)
+
 ## Sprint Retrospective
 
 What worked and what went well?
