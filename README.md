@@ -151,12 +151,17 @@ With the variables now established, they were put in to the MySQL.Properties fil
 
 ![DB-MYSQL-Properties](https://github.com/hjt523/QA_DevOps_Final_Project/blob/main/images/DB-Properties.PNG)
 
+Now all of the variables and properties had been set, it was then just a matter of putting them in the buildspec.yml, so the variables are stored as Global Variables.
+
+![DB-buildspec](https://github.com/hjt523/QA_DevOps_Final_Project/blob/main/images/DB-buildpsec.PNG)
+
 
 ### Future Development
 
 - Add a functionality to make security groups update with every running of the application rather than manually entering ports to open.
 - Automate the creation of Docker Images, which would then be pushed to Docker Hub.
 - Make sure the app is functional and can be used.
+- Ensure database can be connected and is fully functional.
 
 ## Contributors
 
