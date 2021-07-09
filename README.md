@@ -90,6 +90,8 @@ We managed to distribute work well across our team:
 
 ![image](https://raw.githubusercontent.com/hjt523/QA_DevOps_Final_Project/main/images/Day%204.png)
 
+![image](https://raw.githubusercontent.com/hjt523/QA_DevOps_Final_Project/main/images/User%20Stories.png)
+
 ### Risk Assessment
 
 ![image](https://raw.githubusercontent.com/hjt523/QA_DevOps_Final_Project/main/images/Risk.png)
