@@ -98,24 +98,6 @@ Day 4 :
 
 ![image](https://raw.githubusercontent.com/hjt523/QA_DevOps_Final_Project/main/images/MicrosoftTeams-image.png)
 
-## Sprint Retrospective
-
-What worked and what went well?
-- Streamlining the Codebuild process.
-- Ensuring that the Nginx server was accessible.
-- Our feature branch model was very easy to work with.
-
-What caused difficulties and what went wrong?
-- AWS Codebuild proved to be more difficult to use, compared to Jenkins.
-- Although everything was containerised, and NginX was working, we were unable to access the front-end of the app.
-
-What did we do to address those problems?
--  Reviewing documentation and combing existing repositories/stack overflow.
-
-What could we improve on?
-- Researched and compared pipeline software extensively, allowing us to choose a more effective one.
-- Better time management for workflows. We were bottlenecked a number of times waiting on certain tasks to be finished.
-- We could have rotated tasks and reviewed each others work in a more stringent fashion so we wouldn't waste so much time on trivial debugging like misplaced commas or spelling errors.
 
 ### Current State
 
@@ -154,6 +136,26 @@ With the variables now established, they were put in to the MySQL.Properties fil
 Now all of the variables and properties had been set, it was then just a matter of putting them in the buildspec.yml, so the variables are stored as Global Variables.
 
 ![DB-buildspec](https://github.com/hjt523/QA_DevOps_Final_Project/blob/main/images/DB-buildpsec.PNG)
+
+
+## Sprint Retrospective
+
+What worked and what went well?
+- Streamlining the Codebuild process.
+- Ensuring that the Nginx server was accessible.
+- Our feature branch model was very easy to work with.
+
+What caused difficulties and what went wrong?
+- AWS Codebuild proved to be more difficult to use, compared to Jenkins.
+- Although everything was containerised, and NginX was working, we were unable to access the front-end of the app.
+
+What did we do to address those problems?
+-  Reviewing documentation and combing existing repositories/stack overflow.
+
+What could we improve on?
+- Researched and compared pipeline software extensively, allowing us to choose a more effective one.
+- Better time management for workflows. We were bottlenecked a number of times waiting on certain tasks to be finished.
+- We could have rotated tasks and reviewed each others work in a more stringent fashion so we wouldn't waste so much time on trivial debugging like misplaced commas or spelling errors.
 
 
 ### Future Development
