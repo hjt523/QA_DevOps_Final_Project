@@ -10,8 +10,8 @@
    * [Kanban board progress](https://github.com/hjt523/QA_DevOps_Final_Project/tree/main#todo-kanban-board-progress)
 * [CI Pipeline](https://github.com/hjt523/QA_DevOps_Final_Project/tree/main#ci-pipeline)
 * [Running Costs](https://github.com/hjt523/QA_DevOps_Final_Project/tree/main#running-costs)
-* [Future Development](https://github.com/hjt523/QA_DevOps_Final_Project/tree/main#future-development)
 * [Sprint Retrospective](https://github.com/hjt523/QA_DevOps_Final_Project/tree/main#sprint-retrospective)
+* [Future Development](https://github.com/hjt523/QA_DevOps_Final_Project/tree/main#future-development)
 * [Contributors](https://github.com/hjt523/QA_DevOps_Final_Project/tree/main#contributors)
 * [Acknowledgments](https://github.com/hjt523/QA_DevOps_Final_Project/tree/main#acknowledgements)
 * [Licensing](https://github.com/hjt523/QA_DevOps_Final_Project/tree/main#licensing)
@@ -90,25 +90,29 @@ Day 4 :
 
 ## Running Costs
 
-
-## Future Development
-
-- Add a functionality to make security groups update with every running of the application rather than manually entering ports to open.
-
 ## Sprint Retrospective
 
 What worked and what went well?
 - Streamlining the Codebuild process.
+- Ensuring that the Nginx server was accessible.
 
 What caused difficulties and what went wrong?
 - AWS Codebuild being more difficult to deal with than jenkins.
+- During the process though we had nginx working and things properly containerised we were unable to actually access the app.
 
 What did we do to address those problems?
 -  Reviewing documentation and combing existing repositories/stack overflow.
 
 What could we improve on?
 - A better choice for the pipeline software.
-- Better time management for workflows.
+- Better time management for workflows. We were bottlenecked a number of times waiting on certain tasks to be finished.
+- We could have rotated tasks and reviewed each others work in a more stringent fashion so we wouldn't waste so much time on trivial debugging like misplaced commas or spelling errors.
+
+### Future Development
+
+- Add a functionality to make security groups update with every running of the application rather than manually entering ports to open.
+- Create the docker images during the codebuild process rather than creating and pushing them to dockerhub manually.
+- Make sure the app is functional.
 
 ## Contributors
 
